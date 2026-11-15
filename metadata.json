@@ -1,0 +1,6 @@
+{
+  "name": "HELIOS-LUNA — Explorador Polo Sur Lunar",
+  "description": "Panel interactivo de planificación y control de misión lunar para el Polo Sur de la Luna desarrollado por Kardashev One para el NASA Space Apps Challenge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

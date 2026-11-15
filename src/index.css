@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Barlow Semi Condensed", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+@layer base {
+  html, body {
+    font-family: var(--font-sans);
+    letter-spacing: -0.015em;
+    background-color: #050730;
+    color: #EAE4C2;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-sans);
+    letter-spacing: -0.025em;
+    font-weight: 600;
+  }
+}
+
+@keyframes heli-wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-18deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  75% {
+    transform: rotate(-14deg);
+  }
+}
+
+@keyframes heli-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-heli-wave {
+  animation: heli-wave 0.9s ease-in-out infinite;
+}
+
+.animate-heli-float {
+  animation: heli-float 3.6s ease-in-out infinite;
+}
